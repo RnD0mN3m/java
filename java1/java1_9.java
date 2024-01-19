@@ -1,4 +1,4 @@
-package test;
+package test.java1;
 import java.util.Scanner;
 public class java1_9 {
     public static void main(String[] args) {
