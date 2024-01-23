@@ -10,10 +10,10 @@ class Calculator {
         this.y = y;
     }
     int CalcSum() {
-        return x + y; 
+        return this.x + this.y; 
     }
     double CalcAve() {
-        return (x + y)/2;
+        return (this.x + this.y)/2;
     }
 }
 
