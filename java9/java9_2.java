@@ -1,13 +1,12 @@
 package test.java9;
 
 public class java9_2 {
-    static int num(String a) {
+    static void sum() {
      for (int i=0;i<10;i++) {
-            System.out.println(a);
+            System.out.println("Hello");
         }
     }
     public static void main(String[] args) {
-        b       
+        sum();
     }        
-    
 }

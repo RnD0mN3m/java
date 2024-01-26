@@ -25,8 +25,7 @@ class BookInfo {
         return id;
     }
 }
-
-public class java11_10 {
+class java11_10 {
     public static void main(String[] args) {
         // 三国志の書籍情報
         BookInfo book1 = new BookInfo("三国志", "吉川英治", "1989");
@@ -79,25 +78,41 @@ public class java11_10 {
 // 3 
 // 4 
 //5
+//--- 試してみました・12_2を参考しました ---//
 class Person {
-    private static int counter = 0;
-    private int id;
-    
-    public int getId() {
+    static int counter = 0;
+    int id;
+    String book_title, writer_name, publication_year; //, z
+    int getId() {
         return id;
+    }    
+    Person() {
+        this.book_title = null;
+        this.writer_name = null;
+        this.publication_year = null;
+        id = ++counter;
     }
-    protected String a, b, c; //, z
-    Person() { this.a = null; id = ++counter;}
-    Person(String x, String y) {this.a = a; this.b = b; this.c = c; }
+    Person(String book_title, String writer_name, String publication_year) {
+        this.book_title = book_title;
+        this.writer_name = writer_name;
+        this.publication_year = publication_year;
+    }
     // Person(String z) {this.z = z; }
-    void introduce() {System.out.println("書　　名：" + a); System.out.println("著 者 名：" + b); System.out.println("出 版 年：" + c); }
+    void introduce() {
+        System.out.println("書　　名：" + book_title);
+        System.out.println("著 者 名：" + writer_name);
+        System.out.println("出 版 年：" + publication_year);
+    }
 }
-class Teacher extends Person {
-    String x, y; //, z
-    Teacher(String a1, String b1, String c1) {super.a = a1; super.b = b1; super.c = c1; }
-    void introduce() { super.introduce(); }
+class Teacher extends Person { //, z
+    Teacher(String book_title, String writer_name, String publication_year) {
+        super(book_title, writer_name, publication_year);
+    }
+    void introduce() {
+        super.introduce();
+    }
 }
-class java12_2 {
+class java11_10a {
     public static void main(String[] args) {
         Teacher a = new Teacher("三国志", "吉川英治", "1989");
         a.introduce();

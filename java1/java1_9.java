@@ -1,3 +1,4 @@
+// -*- coding: utf-8 -*-
 package test.java1;
 import java.util.Scanner;
 public class java1_9 {
