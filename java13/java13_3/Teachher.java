@@ -1,4 +1,4 @@
-package test.java13.java13_3;
+入力された文字数は 5 です。package test.java13.java13_3;
 
 class Teacher implements Person {
     String name, job, subject;

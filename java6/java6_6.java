@@ -27,14 +27,17 @@ public class java6_6 {
     public static void main(String[] args) {
          Scanner stdIn = new Scanner(System.in);
         System.out.print("入力文字：");
-        String str = stdIn.next();
+        String str = stdIn.nextLine();
         // System.out.print("終了数：");
         // int m = stdIn.nextInt();
-        // int sum = 0;
-        for (int i = 0; i < str.length; i++)
+        int sum = 0;
+        for (int i = 0; i < str.length(); i++){
+            sum+=1;
+           
+        }
             // System.out.print();
             // sum+=i;
-            System.out.println(i);  
+             System.out.println(sum);  
     }
 }
 
