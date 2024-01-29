@@ -30,14 +30,14 @@ public class java6_6 {
         String str = stdIn.nextLine();
         // System.out.print("終了数：");
         // int m = stdIn.nextInt();
-        int sum = 0;
+        // int sum = 0;
         for (int i = 0; i < str.length(); i++){
-            sum+=1;
-           
+            
+            System.out.println(str.charAt(i));
         }
             // System.out.print();
             // sum+=i;
-             System.out.println(sum);  
+              
     }
 }
 
