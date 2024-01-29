@@ -20,10 +20,8 @@ public class java14_3 {
 
         // 結果を表示
         System.out.println("結果文字列：" + result.toString());
-
-        // Scannerを閉じる
-        scanner.close();
     }
 }
 
 // 01234567890123 
+
